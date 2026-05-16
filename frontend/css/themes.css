@@ -1,0 +1,45 @@
+/* Fides — themes.css : liturgical season theming */
+
+body.season-advent {
+  background:
+    radial-gradient(ellipse at top left, rgba(75,0,130,0.06), transparent 50%),
+    var(--c-warm-white);
+}
+body.season-advent .home-hero { background: linear-gradient(135deg, #2D1B5C 0%, #4B0082 60%, #6B238E 130%); }
+
+body.season-christmas {
+  background:
+    radial-gradient(ellipse at top left, rgba(255,255,255,0.4), transparent 50%),
+    radial-gradient(ellipse at bottom right, rgba(201,168,76,0.08), transparent 50%),
+    var(--c-warm-white);
+}
+body.season-christmas .home-hero { background: linear-gradient(135deg, #FFFFFF 0%, #FAF6EE 60%, #C9A84C 130%); color: var(--c-deep); }
+body.season-christmas .home-hero h1 { color: var(--c-crimson); }
+body.season-christmas .home-hero p { color: var(--c-ink); }
+
+body.season-lent {
+  background:
+    radial-gradient(ellipse at top left, rgba(75,0,130,0.05), transparent 50%),
+    var(--c-warm-white);
+}
+body.season-lent .home-hero { background: linear-gradient(135deg, #4B0082 0%, #2A0040 60%, #4B0082 130%); }
+
+body.season-easter {
+  background:
+    radial-gradient(ellipse at top left, rgba(255,255,255,0.5), transparent 50%),
+    radial-gradient(ellipse at bottom right, rgba(201,168,76,0.1), transparent 50%),
+    var(--c-warm-white);
+}
+body.season-easter .home-hero { background: linear-gradient(135deg, #FFFFFF 0%, #C9A84C 80%); color: var(--c-deep); }
+body.season-easter .home-hero h1 { color: var(--c-crimson); }
+body.season-easter .home-hero p { color: var(--c-ink); }
+
+body.season-ordinary .home-hero { background: linear-gradient(135deg, #2D5016 0%, #1B4F72 100%); }
+
+/* season badge */
+.season-badge {
+  display: inline-block; padding: 4px 12px; border-radius: 999px;
+  background: rgba(201,168,76,0.2); border: 1px solid var(--c-gold);
+  font-family: var(--font-ui); font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--c-gold);
+}

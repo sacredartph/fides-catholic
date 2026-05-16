@@ -1,0 +1,26 @@
+{
+  "name": "fides-catholic",
+  "version": "1.0.0",
+  "description": "Fides - The Catholic Faith Experience: a complete, beautiful, doctrinally accurate Catholic learning platform for teenagers.",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "init-db": "node database/init.js",
+    "seed": "node database/seed.js",
+    "build": "node database/init.js && node database/seed.js",
+    "dev": "node backend/server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^12.10.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
