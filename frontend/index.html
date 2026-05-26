@@ -165,27 +165,5 @@
   <script src="/js/view-art.js"></script>
   <script src="/js/app.js"></script>
 
-  <!-- BUKIDIC quick-nav FAB: thumb-reachable back / forward / hub on every page -->
-  <style id="bkdc-fab-style">
-  .bkdc-fab{position:fixed;bottom:calc(env(safe-area-inset-bottom,0px) + 16px);left:16px;z-index:9000;display:flex;gap:4px;background:rgba(13,10,6,0.92);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border:1px solid rgba(200,160,75,0.32);border-radius:999px;padding:4px;box-shadow:0 8px 24px rgba(0,0,0,0.5);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
-  .bkdc-fab button,.bkdc-fab a{appearance:none;background:transparent;border:0;width:44px;height:44px;border-radius:50%;color:#C8A04B;font-size:22px;line-height:1;cursor:pointer;display:grid;place-items:center;text-decoration:none;transition:background .15s,transform .05s;user-select:none;-webkit-tap-highlight-color:transparent}
-  .bkdc-fab button:active,.bkdc-fab a:active{transform:scale(.92);background:rgba(200,160,75,0.16)}
-  @media (hover:hover){.bkdc-fab button:hover,.bkdc-fab a:hover{background:rgba(200,160,75,0.10)}}
-  .bkdc-fab-sep{width:1px;background:rgba(200,160,75,0.18);margin:8px 1px}
-  @media print{.bkdc-fab{display:none!important}}
-  </style>
-  <nav class="bkdc-fab" aria-label="Quick navigation">
-    <button id="bkdc-fab-back" type="button" aria-label="Back" title="Back">&#8592;</button>
-    <button id="bkdc-fab-fwd" type="button" aria-label="Forward" title="Forward">&#8594;</button>
-    <span class="bkdc-fab-sep" aria-hidden="true"></span>
-    <a id="bkdc-fab-hub" href="https://learn.sacredartph.com" aria-label="Hub" title="Hub">&#8962;</a>
-  </nav>
-  <script id="bkdc-fab-script">
-  (function(){
-    var b=document.getElementById('bkdc-fab-back'),f=document.getElementById('bkdc-fab-fwd');
-    if(b)b.addEventListener('click',function(){history.back();});
-    if(f)f.addEventListener('click',function(){history.forward();});
-  })();
-  </script>
 </body>
 </html>
